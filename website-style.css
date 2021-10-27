@@ -7,22 +7,27 @@
 
 .navbar, .links {
   display: flex;
-  padding: 15px 15px 3px 15px;
   background: #1F2937;
 }
 
+.header-logo, .links {
+  margin: auto;
+}
+
+.navbar {
+  padding-top: 20px;
+  justify-content: space-between;
+}
+
 .header-logo {
-  margin-left: 10%;
-  margin-top: .5%;
   align-items: center;
   color: #F9FAF8;
   font-size: 24px;
 }
 
 .links {
-  margin-left: 35%;
+  display: flex;
   list-style-type: none;
-  display: row;
   gap: 20px;
   align-items: center;
   font-size: 18px;
@@ -35,31 +40,20 @@ a {
 }
 
 .welcome {
-  background: #1F2937;
   display: flex;
+  background: #1F2937;
   color: white;
   padding: 120px;
-  gap: 40px;
+  gap: 20px;
 }
 
-.signup-left > h1 {
+.welcome-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
   font-size: 48px;
-}
-
-.signup-main {
-  margin-top: 10px;
-  background: #3882F6;
-  color: white;
-  padding: 10px 35px 10px 35px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-.placeholder {
-  margin-left: auto;
-  padding: 15px 0px 45px 70px;
-  background: gray;
-  width: 700px;
-  height: 155px;
 }
 
 .subtext {
@@ -67,10 +61,33 @@ a {
   color: #E5E7EB;
 }
 
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
 
-.placeholder-text {
-  margin-top: 85px;
-  margin-left: 65px;
+.subtext {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.signup-main {
+  margin-top: 10px;
+  background: #3882F6;
+  color: white;
+  padding: 10px 0px 10px 0px;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 120px;
+}
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  width: 700px;
+  height: 218px;
 }
 
 .random-info {
@@ -134,14 +151,23 @@ a {
   padding: 80px;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+}
+
+.display-signup {
+  display: flex;
+  border: 4px solid #3882F6;
+  border-radius: 10px;
 }
 
 .action-box {
   color: white;
   background: #3882F6;
   padding: 55px;
+}
 
+.cta-text {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .cta {
@@ -153,7 +179,11 @@ a {
   color: white;
   background: #3882F6;
   border: 2px solid white;
-  padding: 5px;
+  padding: 7px;
+  width: 110px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-right: 35px;
 
 }
 
